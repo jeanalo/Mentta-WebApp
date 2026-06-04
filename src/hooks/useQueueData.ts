@@ -28,56 +28,67 @@ export const LIVE_CAFETERIAS = new Set(["qbano"]);
 
 const POLL_MS = 20_000;
 
-function deriveLevel(count: number): QueueLevel {
-    if (count >= 15) return "high";
-    if (count >= 7) return "mid";
-    return "low";
+// ── module-level singleton: one fetch, one interval, shared by all consumers ──
+
+let _qbanoData: QueueData = { count: 0, level: "low", estimatedMinutes: 0 };
+const _listeners = new Set<() => void>();
+let _pollingId: ReturnType<typeof setInterval> | null = null;
+
+async function _fetchQbano() {
+    try {
+        const res = await fetch("/api/personas");
+        if (!res.ok) return;
+        const { count } = (await res.json()) as { count: number };
+        const c = count ?? 0;
+        _qbanoData = {
+            count: c,
+            level: c === 0 ? "low" : c <= 8 ? "low" : c <= 14 ? "mid" : "high",
+            estimatedMinutes: c === 0 ? 0 : Math.round(c * 1.5),
+        };
+        _listeners.forEach((fn) => fn());
+    } catch {
+        // silently keep last known value on network error
+    }
 }
 
-function deriveMinutes(count: number): number {
-    if (count === 0) return 0;
-    return Math.max(1, Math.round(count * 1.5));
+function _subscribe(listener: () => void): () => void {
+    _listeners.add(listener);
+    if (_pollingId === null) {
+        _fetchQbano();
+        _pollingId = setInterval(_fetchQbano, POLL_MS);
+    }
+    return () => {
+        _listeners.delete(listener);
+        if (_listeners.size === 0 && _pollingId !== null) {
+            clearInterval(_pollingId);
+            _pollingId = null;
+        }
+    };
 }
+
+// ── hooks ─────────────────────────────────────────────────────────────────────
 
 export function useQueueData(cafeteriaId: string): QueueData {
     const isLive = LIVE_CAFETERIAS.has(cafeteriaId);
-    const [data, setData] = useState<QueueData>(
-        STATIC_QUEUE_DATA[cafeteriaId] ?? {
-            count: 0,
-            level: "low",
-            estimatedMinutes: 0,
-        },
-    );
+    const [, rerender] = useState(0);
 
     useEffect(() => {
         if (!isLive) return;
-
-        async function fetchCount() {
-            try {
-                const res = await fetch("/api/personas");
-                if (!res.ok) return;
-                const { count } = await res.json();
-                console.log(`Fetched count for ${cafeteriaId}: ${count}`);
-                setData({
-                    count,
-                    level: deriveLevel(count),
-                    estimatedMinutes: deriveMinutes(count),
-                });
-            } catch {
-                // silently keep last known value on network error
-            }
-        }
-
-        fetchCount();
-        const id = setInterval(fetchCount, POLL_MS);
-        return () => clearInterval(id);
+        return _subscribe(() => rerender((n) => n + 1));
     }, [isLive]);
 
-    return data;
+    if (isLive) return _qbanoData;
+    return STATIC_QUEUE_DATA[cafeteriaId] ?? { count: 0, level: "low", estimatedMinutes: 0 };
 }
 
 export function useAllQueueData(): Record<string, QueueData> {
-    return STATIC_QUEUE_DATA;
+    const [, rerender] = useState(0);
+
+    useEffect(() => {
+        return _subscribe(() => rerender((n) => n + 1));
+    }, []);
+
+    return { ...STATIC_QUEUE_DATA, qbano: _qbanoData };
 }
 
 export function getLiveLeader(): { id: string; data: QueueData } {
