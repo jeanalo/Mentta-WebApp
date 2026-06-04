@@ -45,9 +45,10 @@ async function _fetchQbano() {
             level: c === 0 ? "low" : c <= 8 ? "low" : c <= 14 ? "mid" : "high",
             estimatedMinutes: c === 0 ? 0 : Math.round(c * 1.5),
         };
+        console.log('[Mentta] Arduino sensor update:', _qbanoData.count, 'people');
         _listeners.forEach((fn) => fn());
     } catch {
-        // silently keep last known value on network error
+        console.log('[Mentta] Arduino fetch failed, keeping last value');
     }
 }
 
@@ -70,25 +71,25 @@ function _subscribe(listener: () => void): () => void {
 
 export function useQueueData(cafeteriaId: string): QueueData {
     const isLive = LIVE_CAFETERIAS.has(cafeteriaId);
-    const [, rerender] = useState(0);
+    const [liveData, setLiveData] = useState<QueueData>(_qbanoData);
 
     useEffect(() => {
         if (!isLive) return;
-        return _subscribe(() => rerender((n) => n + 1));
+        return _subscribe(() => setLiveData({ ..._qbanoData }));
     }, [isLive]);
 
-    if (isLive) return _qbanoData;
+    if (isLive) return liveData;
     return STATIC_QUEUE_DATA[cafeteriaId] ?? { count: 0, level: "low", estimatedMinutes: 0 };
 }
 
 export function useAllQueueData(): Record<string, QueueData> {
-    const [, rerender] = useState(0);
+    const [liveQbano, setLiveQbano] = useState<QueueData>(_qbanoData);
 
     useEffect(() => {
-        return _subscribe(() => rerender((n) => n + 1));
+        return _subscribe(() => setLiveQbano({ ..._qbanoData }));
     }, []);
 
-    return { ...STATIC_QUEUE_DATA, qbano: _qbanoData };
+    return { ...STATIC_QUEUE_DATA, qbano: liveQbano };
 }
 
 export function getLiveLeader(): { id: string; data: QueueData } {
