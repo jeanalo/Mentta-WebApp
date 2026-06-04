@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #0f0f13;
+    --card: #141518;
+    --card2: #1c1c21;
+    --border: #242428;
+    --icon-bg: #252531;
+    --brand: #5454f2;
+    --text-primary: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --text-label: #717178;
+
+    --queue-high-text: #f87171;
+    --queue-high-bg: #311d21;
+    --queue-mid-text: #fbbf24;
+    --queue-mid-bg: #31270f;
+    --queue-low-text: #34d399;
+    --queue-low-bg: #112a26;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Satoshi', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    border: none;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@layer utilities {
+  .font-mono-bold {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+  }
+}

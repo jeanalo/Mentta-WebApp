@@ -1,0 +1,1455 @@
+{
+  "cafeterias": [
+    {
+      "id": "isabella",
+      "name": "Isabela",
+      "location": "Central",
+      "type": "bandeja",
+      "description": "Almuerzo tipo bandeja con buffet de acompañantes. Eliges proteína y armas tu plato.",
+      "hours": "11:30 AM - 3:00 PM",
+      "priceRange": "$12,000 - $18,000",
+      "image": "/imagenes/Isabella.png",
+      "categories": [
+        {
+          "name": "Almuerzos",
+          "items": [
+            {
+              "id": "isa-001",
+              "name": "Bandeja con Pollo a la Plancha",
+              "description": "Pollo a la plancha con arroz, ensalada y acompañante a elección.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/isa-001.jpg"
+            },
+            {
+              "id": "isa-002",
+              "name": "Bandeja con Filete de Cerdo",
+              "description": "Filete de cerdo con arroz, ensalada y acompañante a elección.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-002.jpg"
+            },
+            {
+              "id": "isa-003",
+              "name": "Bandeja con Carne Molida",
+              "description": "Carne molida con arroz, frijoles y ensalada fresca.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/isa-003.jpg"
+            },
+            {
+              "id": "isa-004",
+              "name": "Bandeja con Chuleta",
+              "description": "Chuleta de cerdo empanizada con arroz y acompañantes.",
+              "price": 16000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-004.jpg"
+            },
+            {
+              "id": "isa-005",
+              "name": "Bandeja Vegetariana",
+              "description": "Arroz, frijoles, ensalada, maduro y huevo frito.",
+              "price": 12000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/isa-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Acompañantes",
+          "items": [
+            {
+              "id": "isa-006",
+              "name": "Sopa del Día",
+              "description": "Sopa casera preparada diariamente.",
+              "price": 4000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-006.jpg"
+            },
+            {
+              "id": "isa-007",
+              "name": "Jugo Natural",
+              "description": "Jugo natural de la fruta del día.",
+              "price": 3500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/isa-007.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anthonys-chef",
+      "name": "Anthony's Chef",
+      "location": "Central",
+      "type": "bandeja",
+      "description": "Almuerzo casero tipo bandeja. Elige tu proteína y arma tu plato con los acompañantes del día.",
+      "hours": "11:30 AM - 3:00 PM",
+      "priceRange": "$12,000 - $16,000",
+      "image": "/imagenes/anthonys.png",
+      "categories": [
+        {
+          "name": "Almuerzos",
+          "items": [
+            {
+              "id": "ant-001",
+              "name": "Bandeja con Pollo",
+              "description": "Pollo asado con arroz, ensalada, frijoles y maduro.",
+              "price": 13000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ant-001.jpg"
+            },
+            {
+              "id": "ant-002",
+              "name": "Bandeja con Carne Desmechada",
+              "description": "Carne desmechada con arroz, ensalada y frijoles.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ant-002.jpg"
+            },
+            {
+              "id": "ant-003",
+              "name": "Bandeja con Carne Molida",
+              "description": "Carne molida con arroz, verduras y ensalada fresca.",
+              "price": 13000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-003.jpg"
+            },
+            {
+              "id": "ant-004",
+              "name": "Bandeja con Filete de Cerdo",
+              "description": "Filete de cerdo a la plancha con arroz y acompañantes.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-002.jpg"
+            },
+            {
+              "id": "ant-005",
+              "name": "Bandeja Vegetariana",
+              "description": "Arroz, frijoles, ensalada, maduro y huevo.",
+              "price": 12000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/isa-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Bebidas",
+          "items": [
+            {
+              "id": "ant-006",
+              "name": "Jugo Natural",
+              "description": "Jugo de la fruta del día en agua o leche.",
+              "price": 3500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/isa-006.jpg"
+            },
+            {
+              "id": "ant-007",
+              "name": "Sopa del Día",
+              "description": "Sopa casera con ingredientes frescos.",
+              "price": 4000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/isa-007.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bristo-central",
+      "name": "Bristo Central",
+      "location": "Central",
+      "type": "bandeja_y_snacks",
+      "description": "Almuerzos tipo bandeja y comida rápida para media mañana. Opciones variadas todo el día.",
+      "hours": "9:00 AM - 4:00 PM",
+      "priceRange": "$6,000 - $18,000",
+      "image": "/imagenes/bristocentral.png",
+      "categories": [
+        {
+          "name": "Almuerzos",
+          "items": [
+            {
+              "id": "brc-001",
+              "name": "Almuerzo con Pollo",
+              "description": "Pollo a la plancha con arroz, ensalada y papas.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-001.jpg"
+            },
+            {
+              "id": "brc-002",
+              "name": "Almuerzo con Cerdo",
+              "description": "Filete de cerdo con arroz, ensalada y acompañante.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/brc-002.jpg"
+            },
+            {
+              "id": "brc-003",
+              "name": "Almuerzo Especial",
+              "description": "Arroz premium con proteína, papas y sopa del día.",
+              "price": 18000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-003.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Bowls",
+          "items": [
+            {
+              "id": "brc-004",
+              "name": "Bowl de Pollo",
+              "description": "Arroz, pollo en trocitos, pico de gallo, frijoles y aguacate.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-004.jpg"
+            },
+            {
+              "id": "brc-005",
+              "name": "Bowl Vegetariano",
+              "description": "Arroz, frijoles, pico de gallo, aguacate y maduro.",
+              "price": 13000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/brc-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Media Mañana",
+          "items": [
+            {
+              "id": "brc-006",
+              "name": "Dedos de Queso",
+              "description": "Dedos de queso crujientes con salsa rosada.",
+              "price": 6000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/brc-006.jpg"
+            },
+            {
+              "id": "brc-007",
+              "name": "Salchipapa",
+              "description": "Papas fritas con salchicha, salsas y queso.",
+              "price": 10000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-007.jpg"
+            },
+            {
+              "id": "brc-008",
+              "name": "Empanadas (x3)",
+              "description": "Empanadas de carne con ají.",
+              "price": 6500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-008.jpg"
+            },
+            {
+              "id": "brc-009",
+              "name": "Patacones con Hogao",
+              "description": "Patacones crocantes con hogao y queso rallado.",
+              "price": 8000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/brc-009.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bristo-g",
+      "name": "Bristo G",
+      "location": "Edificio G",
+      "type": "bandeja",
+      "description": "Almuerzo tipo bandeja. Arroz con proteína a elección y acompañantes del día.",
+      "hours": "11:30 AM - 3:00 PM",
+      "priceRange": "$13,000 - $18,000",
+      "image": "/imagenes/bristog.png",
+      "categories": [
+        {
+          "name": "Almuerzos",
+          "items": [
+            {
+              "id": "brg-001",
+              "name": "Almuerzo con Pollo",
+              "description": "Pollo a la plancha con arroz, ensalada y papas.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-001.jpg"
+            },
+            {
+              "id": "brg-002",
+              "name": "Almuerzo con Cerdo",
+              "description": "Filete de cerdo con arroz, ensalada y acompañante.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/brc-002.jpg"
+            },
+            {
+              "id": "brg-003",
+              "name": "Almuerzo Especial",
+              "description": "Arroz premium con proteína, papas y sopa del día.",
+              "price": 18000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-003.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Bowls",
+          "items": [
+            {
+              "id": "brg-004",
+              "name": "Bowl de Pollo",
+              "description": "Arroz, trocitos de pollo, pico de gallo, frijoles y aguacate.",
+              "price": 15000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/brc-004.jpg"
+            },
+            {
+              "id": "brg-005",
+              "name": "Bowl Vegetariano",
+              "description": "Arroz, frijoles, pico de gallo, aguacate y maduro.",
+              "price": 13000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/brc-005.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-del-sol",
+      "name": "Café del Sol",
+      "location": "Central",
+      "type": "comida_rapida",
+      "description": "Comida rápida variada: hamburguesas, wraps, bowls, arroces al wok, nachos y postres.",
+      "hours": "8:00 AM - 6:00 PM",
+      "priceRange": "$10,500 - $25,800",
+      "image": "/imagenes/Cafedelsol.png",
+      "categories": [
+        {
+          "name": "Hamburguesas y Perros",
+          "items": [
+            {
+              "id": "sol-001",
+              "name": "Tremenda Burger",
+              "description": "Hamburguesa con carne, queso, tocineta y salsas de la casa.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sol-001.jpg"
+            },
+            {
+              "id": "sol-002",
+              "name": "Perrito del Sol con Queso",
+              "description": "Perro caliente con queso derretido y salsas.",
+              "price": 12600,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-002.jpg"
+            },
+            {
+              "id": "sol-003",
+              "name": "Choripán",
+              "description": "Choripán con chimichurri y salsas.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-003.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Arroces y Bowls",
+          "items": [
+            {
+              "id": "sol-004",
+              "name": "Arroz al Wok con Pollo",
+              "description": "Arroz salteado al wok con pollo y maduro. Incluye bebida.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sol-004.jpg"
+            },
+            {
+              "id": "sol-005",
+              "name": "Arroz al Wok Mixto",
+              "description": "Arroz salteado con pollo, cerdo y vegetales. Incluye bebida.",
+              "price": 19900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-005.jpg"
+            },
+            {
+              "id": "sol-006",
+              "name": "Azteca Bowl",
+              "description": "Bowl mexicano con arroz, proteína, pico de gallo y salsas. Incluye bebida.",
+              "price": 21000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sol-006.jpg"
+            },
+            {
+              "id": "sol-007",
+              "name": "Quesadillas con Pollo",
+              "description": "Quesadillas rellenas de pollo con guacamole. Incluye bebida.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-007.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Wraps y Pastas",
+          "items": [
+            {
+              "id": "sol-008",
+              "name": "Wrap de Pollo con Maduro",
+              "description": "Wrap relleno de pollo, vegetales frescos y maduro.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sol-008.jpg"
+            },
+            {
+              "id": "sol-009",
+              "name": "Mac & Cheese",
+              "description": "Pasta con salsa de queso cremosa. Incluye bebida.",
+              "price": 18900,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sol-009.jpg"
+            },
+            {
+              "id": "sol-010",
+              "name": "Chicken & Chips",
+              "description": "Pollo apanado crujiente con papas fritas.",
+              "price": 18000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sol-010.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Papas y Nachos",
+          "items": [
+            {
+              "id": "sol-011",
+              "name": "Papitas del Sol",
+              "description": "Papas fritas con salsas de la casa.",
+              "price": 10500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sol-011.jpg"
+            },
+            {
+              "id": "sol-012",
+              "name": "Super Nachos del Sol",
+              "description": "Nachos con queso, carne, guacamole y jalapeños.",
+              "price": 24000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-012.jpg"
+            },
+            {
+              "id": "sol-013",
+              "name": "Colita Cubana",
+              "description": "Sándwich cubano con cerdo, jamón y queso prensado.",
+              "price": 12600,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sol-013.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Postres",
+          "items": [
+            {
+              "id": "sol-014",
+              "name": "Parfait Bowl",
+              "description": "Bowl de yogurt con granola y fruta fresca.",
+              "price": 15000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sol-014.jpg"
+            },
+            {
+              "id": "sol-015",
+              "name": "Brownie con Helado",
+              "description": "Brownie caliente con bola de helado de vainilla.",
+              "price": 12000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sol-015.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-sabor",
+      "name": "Café Sabor",
+      "location": "Central",
+      "type": "cafe_panaderia",
+      "description": "Cafetería y panadería con bebidas de especialidad, desayunos, sándwiches y repostería artesanal.",
+      "hours": "7:00 AM - 6:00 PM",
+      "priceRange": "$3,400 - $20,900",
+      "image": "/imagenes/cafesabor.png",
+      "categories": [
+        {
+          "name": "Bebidas Calientes",
+          "items": [
+            {
+              "id": "sab-001",
+              "name": "Cappuccino",
+              "description": "Espresso con leche vaporizada y espuma cremosa.",
+              "price": 6900,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-001.jpg"
+            },
+            {
+              "id": "sab-002",
+              "name": "Café Latte",
+              "description": "Espresso suave con abundante leche vaporizada.",
+              "price": 6000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-002.jpg"
+            },
+            {
+              "id": "sab-003",
+              "name": "Mocaccino",
+              "description": "Espresso con chocolate y leche vaporizada.",
+              "price": 8000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-003.jpg"
+            },
+            {
+              "id": "sab-004",
+              "name": "Te Matcha",
+              "description": "Matcha japonés con leche vaporizada.",
+              "price": 7000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-004.jpg"
+            },
+            {
+              "id": "sab-005",
+              "name": "Chocolate",
+              "description": "Chocolate caliente preparado con leche.",
+              "price": 5000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Bebidas Frías",
+          "items": [
+            {
+              "id": "sab-006",
+              "name": "Granizado de Café",
+              "description": "Café granizado refrescante con hielo.",
+              "price": 10000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-006.jpg"
+            },
+            {
+              "id": "sab-007",
+              "name": "Iced Coffee",
+              "description": "Café frío con hielo y leche.",
+              "price": 12000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-007.jpg"
+            },
+            {
+              "id": "sab-008",
+              "name": "Espresso Tónico",
+              "description": "Espresso con agua tónica y hielo. Refrescante y único.",
+              "price": 10000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-008.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Panadería",
+          "items": [
+            {
+              "id": "sab-009",
+              "name": "Croissant de Chocolate",
+              "description": "Croissant hojaldrado relleno de chocolate.",
+              "price": 5500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-009.jpg"
+            },
+            {
+              "id": "sab-010",
+              "name": "Rollo de Canela",
+              "description": "Rollo de canela con glaseado de azúcar.",
+              "price": 5000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/sab-010.jpg"
+            },
+            {
+              "id": "sab-011",
+              "name": "Pandeyuca",
+              "description": "Pan de yuca tradicional recién horneado.",
+              "price": 3000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-011.jpg"
+            },
+            {
+              "id": "sab-012",
+              "name": "Dedo Hawaiano",
+              "description": "Dedo de hojaldre relleno de jamón, queso y piña.",
+              "price": 4900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sab-012.jpg"
+            },
+            {
+              "id": "sab-013",
+              "name": "Pastel de Pollo",
+              "description": "Pastel horneado relleno de pollo.",
+              "price": 5500,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/sab-013.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Sándwiches y Hamburguesas",
+          "items": [
+            {
+              "id": "sab-014",
+              "name": "Sándwich Jamón y Queso",
+              "description": "Sándwich clásico de jamón y queso en pan tostado.",
+              "price": 10000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sab-014.jpg"
+            },
+            {
+              "id": "sab-015",
+              "name": "Hamburguesa Callejera",
+              "description": "Hamburguesa con papas a la francesa.",
+              "price": 15500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/sab-015.jpg"
+            },
+            {
+              "id": "sab-016",
+              "name": "Hamburguesa Vegetariana",
+              "description": "Hamburguesa vegetal con papas a la francesa.",
+              "price": 14900,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/sab-016.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-quindio",
+      "name": "Café Quindío",
+      "location": "Central",
+      "type": "cafe",
+      "description": "Franquicia colombiana de café de origen. Bebidas de café premium, aromáticas y acompañamientos.",
+      "hours": "7:00 AM - 6:00 PM",
+      "priceRange": "$3,000 - $14,000",
+      "image": "/imagenes/Cafequindio.png",
+      "categories": [
+        {
+          "name": "Cafés Calientes",
+          "items": [
+            {
+              "id": "qui-001",
+              "name": "Café de Origen",
+              "description": "Café tinto de origen Quindío. Suave y aromático.",
+              "price": 3500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/qui-001.jpg"
+            },
+            {
+              "id": "qui-002",
+              "name": "Cappuccino",
+              "description": "Espresso con leche vaporizada y espuma.",
+              "price": 7500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/qui-001.jpg"
+            },
+            {
+              "id": "qui-003",
+              "name": "Moccaccino",
+              "description": "Café con chocolate y crema batida.",
+              "price": 8500,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qui-003.jpg"
+            },
+            {
+              "id": "qui-004",
+              "name": "Chocolate Quindío",
+              "description": "Chocolate caliente con leche y canela.",
+              "price": 7000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qui-004.jpg"
+            },
+            {
+              "id": "qui-005",
+              "name": "Aromática",
+              "description": "Aromática natural de frutas o hierbas.",
+              "price": 4000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qui-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cafés Fríos",
+          "items": [
+            {
+              "id": "qui-006",
+              "name": "Frappé de Café",
+              "description": "Café helado con leche, hielo y crema batida.",
+              "price": 12000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/qui-006.jpg"
+            },
+            {
+              "id": "qui-007",
+              "name": "Granizado de Café",
+              "description": "Café granizado refrescante con hielo.",
+              "price": 10000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qui-006.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Acompañamientos",
+          "items": [
+            {
+              "id": "qui-008",
+              "name": "Almojábana",
+              "description": "Almojábana tradicional recién horneada.",
+              "price": 3000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/qui-008.png"
+            },
+            {
+              "id": "qui-009",
+              "name": "Pandebono",
+              "description": "Pandebono vallecaucano fresco y esponjoso.",
+              "price": 3000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/qui-009.jpg"
+            },
+            {
+              "id": "qui-010",
+              "name": "Torta de Café",
+              "description": "Porción de torta con sabor a café Quindío.",
+              "price": 7500,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qui-010.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qbano",
+      "name": "Sándwich Qbano",
+      "location": "Central",
+      "type": "sandwiches",
+      "description": "Franquicia colombiana de sándwiches, wraps y ensaladas. Combos con bebida incluida.",
+      "hours": "9:00 AM - 6:00 PM",
+      "priceRange": "$14,900 - $26,900",
+      "image": "/imagenes/Bbano.png",
+      "categories": [
+        {
+          "name": "Sándwiches",
+          "items": [
+            {
+              "id": "qba-001",
+              "name": "Sándwich Cubano",
+              "description": "El clásico cubano con cerdo, jamón, queso y pepinillos.",
+              "price": 21900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/qba-001.jpg"
+            },
+            {
+              "id": "qba-002",
+              "name": "Sándwich de Pollo",
+              "description": "Pechuga de pollo con vegetales frescos y salsas.",
+              "price": 19900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/qba-002.jpg"
+            },
+            {
+              "id": "qba-003",
+              "name": "Sándwich Hawaiano",
+              "description": "Jamón, queso, piña y salsas en pan tostado.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/qba-003.jpg"
+            },
+            {
+              "id": "qba-004",
+              "name": "Sándwich Vegetariano",
+              "description": "Vegetales frescos, queso y salsas en pan artesanal.",
+              "price": 16900,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/qba-004.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Wraps y Ensaladas",
+          "items": [
+            {
+              "id": "qba-005",
+              "name": "Wrap de Pollo",
+              "description": "Tortilla rellena de pollo con vegetales y salsa ranch.",
+              "price": 19900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/qba-005.jpg"
+            },
+            {
+              "id": "qba-006",
+              "name": "Ensalada Qbano",
+              "description": "Ensalada fresca con pollo, croutones y aderezo.",
+              "price": 18900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/qba-006.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Combos",
+          "items": [
+            {
+              "id": "qba-007",
+              "name": "Combo Cubano",
+              "description": "Sándwich cubano + papas fritas + bebida.",
+              "price": 26900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/qba-007.jpg"
+            },
+            {
+              "id": "qba-008",
+              "name": "Combo Pollo",
+              "description": "Sándwich de pollo + papas fritas + bebida.",
+              "price": 24900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/qba-008.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-snack-f",
+      "name": "The Snack F",
+      "location": "Edificio F",
+      "type": "comida_rapida",
+      "description": "Comida rápida variada: pizzas, sándwiches, quesadillas, burritos, crêpes y plato del día.",
+      "hours": "8:00 AM - 5:00 PM",
+      "priceRange": "$4,500 - $22,500",
+      "image": "/imagenes/SnackF.png",
+      "categories": [
+        {
+          "name": "Combos Pizza y Sándwich",
+          "items": [
+            {
+              "id": "snf-001",
+              "name": "Combo Pizza T.Q.M",
+              "description": "Pizza con tocineta, queso y maíz con bebida.",
+              "price": 22500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-001.png"
+            },
+            {
+              "id": "snf-002",
+              "name": "Combo Sándwich de Pollo",
+              "description": "Sándwich de pollo con champiñones y bebida.",
+              "price": 22500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-002.jpg"
+            },
+            {
+              "id": "snf-003",
+              "name": "Combo Sándwich Especial Snack",
+              "description": "Sándwich especial de la casa con bebida.",
+              "price": 22500,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-003.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Plato del Día",
+          "items": [
+            {
+              "id": "snf-004",
+              "name": "Plato con Chuleta de Cerdo",
+              "description": "Chuleta de cerdo con arroz, ensalada y acompañante.",
+              "price": 20000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-004.jpg"
+            },
+            {
+              "id": "snf-005",
+              "name": "Plato con Filete de Pollo",
+              "description": "Filete de pollo a la plancha con arroz y ensalada.",
+              "price": 20000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-005.jpg"
+            },
+            {
+              "id": "snf-006",
+              "name": "Plato con Ropa Vieja",
+              "description": "Carne desmechada estilo ropa vieja con arroz.",
+              "price": 20000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-006.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Mexicano",
+          "items": [
+            {
+              "id": "snf-007",
+              "name": "Combo Quesadilla Colombiana",
+              "description": "Quesadilla con relleno colombiano y bebida.",
+              "price": 21500,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-007.jpg"
+            },
+            {
+              "id": "snf-008",
+              "name": "Burrito de Carne",
+              "description": "Burrito relleno de carne, arroz, frijoles y salsas.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-008.jpg"
+            },
+            {
+              "id": "snf-009",
+              "name": "Burrito Primavera",
+              "description": "Burrito vegetariano con verduras y frijoles.",
+              "price": 14000,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/snf-009.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Panadería",
+          "items": [
+            {
+              "id": "snf-010",
+              "name": "Pastel de Hojaldre",
+              "description": "Hojaldre relleno recién horneado.",
+              "price": 7500,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-010.jpg"
+            },
+            {
+              "id": "snf-011",
+              "name": "Dedos de Queso",
+              "description": "Dedos de queso crujientes.",
+              "price": 4500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/snf-004.jpg"
+            },
+            {
+              "id": "snf-012",
+              "name": "Dedo Hawaiano",
+              "description": "Dedo de hojaldre relleno hawaiano.",
+              "price": 4900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-005.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-snack-bienest",
+      "name": "The Snack BU",
+      "location": "Bienestar Universitario",
+      "type": "comida_rapida",
+      "description": "Sucursal de The Snack con menú similar. Combos, plato del día y panadería.",
+      "hours": "8:00 AM - 5:00 PM",
+      "priceRange": "$4,500 - $22,500",
+      "image": "/imagenes/SnackBU.png",
+      "categories": [
+        {
+          "name": "Combos",
+          "items": [
+            {
+              "id": "snb-001",
+              "name": "Combo Pizza T.Q.M",
+              "description": "Pizza con tocineta, queso y maíz con bebida.",
+              "price": 22500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-001.png"
+            },
+            {
+              "id": "snb-002",
+              "name": "Combo Sándwich de Pollo",
+              "description": "Sándwich de pollo con champiñones y bebida.",
+              "price": 22500,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-002.jpg"
+            },
+            {
+              "id": "snb-003",
+              "name": "Combo Perro con Queso y Tocineta",
+              "description": "Perro caliente con queso, tocineta y bebida.",
+              "price": 16900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snb-003.png"
+            }
+          ]
+        },
+        {
+          "name": "Plato del Día",
+          "items": [
+            {
+              "id": "snb-004",
+              "name": "Plato con Chuleta de Cerdo",
+              "description": "Chuleta de cerdo con arroz, ensalada y acompañante.",
+              "price": 20000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-004.jpg"
+            },
+            {
+              "id": "snb-005",
+              "name": "Plato con Filete de Pollo",
+              "description": "Filete de pollo con arroz y ensalada.",
+              "price": 20000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/snf-005.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Burritos y Crêpes",
+          "items": [
+            {
+              "id": "snb-006",
+              "name": "Burrito de Carne",
+              "description": "Burrito relleno de carne, arroz, frijoles y salsas.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-006.jpg"
+            },
+            {
+              "id": "snb-007",
+              "name": "Crêpe de Jamón y Queso",
+              "description": "Crêpe salada con jamón y queso fundido.",
+              "price": 15900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snb-007.png"
+            }
+          ]
+        },
+        {
+          "name": "Panadería",
+          "items": [
+            {
+              "id": "snb-008",
+              "name": "Pastel de Hojaldre",
+              "description": "Hojaldre relleno recién horneado.",
+              "price": 7500,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/snf-008.jpg"
+            },
+            {
+              "id": "snb-009",
+              "name": "Dedos de Queso",
+              "description": "Dedos de queso crujientes.",
+              "price": 4500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/snf-009.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ventolini",
+      "name": "Ventolini",
+      "location": "Central",
+      "type": "restaurante",
+      "description": "Franquicia caleña con desayunos, pastas, ensaladas, arroces para compartir y bebidas de café.",
+      "hours": "7:00 AM - 5:00 PM",
+      "priceRange": "$3,300 - $52,000",
+      "image": "/imagenes/Ventolini.png",
+      "categories": [
+        {
+          "name": "Desayunos",
+          "items": [
+            {
+              "id": "ven-001",
+              "name": "Huevos con Salchicha",
+              "description": "Huevos revueltos con miga de arepa y salchicha. Incluye almojábana o arepa con queso.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ven-001.png"
+            },
+            {
+              "id": "ven-002",
+              "name": "Huevos con Tocineta",
+              "description": "Huevos revueltos con tocineta crocante. Incluye almojábana o arepa con queso.",
+              "price": 14000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ven-002.png"
+            }
+          ]
+        },
+        {
+          "name": "Pastas",
+          "items": [
+            {
+              "id": "ven-003",
+              "name": "Pasta Alfredo con Pollo",
+              "description": "Pasta en salsa alfredo cremosa con pollo a la plancha.",
+              "price": 22000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ven-003.png"
+            },
+            {
+              "id": "ven-004",
+              "name": "Pasta Napolitana",
+              "description": "Pasta con albahaca y tomates perla.",
+              "price": 17500,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/ven-004.png"
+            },
+            {
+              "id": "ven-005",
+              "name": "Pasta Bolognesa",
+              "description": "Pasta con salsa de carne molida estilo italiano.",
+              "price": 19700,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ven-005.png"
+            },
+            {
+              "id": "ven-006",
+              "name": "Pasta con Camarón",
+              "description": "Pasta con camarones en salsa cremosa.",
+              "price": 23000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/ven-006.png"
+            },
+            {
+              "id": "ven-007",
+              "name": "Lasagna Mixta",
+              "description": "Lasagna con carne y pollo gratinada con queso.",
+              "price": 22000,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/ven-007.png"
+            }
+          ]
+        },
+        {
+          "name": "Ensaladas",
+          "items": [
+            {
+              "id": "ven-008",
+              "name": "Lentejas Mediterráneas",
+              "description": "Ensalada de lentejas con vegetales frescos y vinagreta.",
+              "price": 16900,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/ven-008.png"
+            },
+            {
+              "id": "ven-009",
+              "name": "Garbanzos de la Nonna",
+              "description": "Ensalada de garbanzos estilo italiano con especias.",
+              "price": 20100,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/ven-009.png"
+            }
+          ]
+        },
+        {
+          "name": "Bebidas",
+          "items": [
+            {
+              "id": "ven-010",
+              "name": "Cappuccino",
+              "description": "Cappuccino con espuma cremosa.",
+              "price": 8500,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/ven-009.png"
+            },
+            {
+              "id": "ven-011",
+              "name": "Latte",
+              "description": "Café latte con leche vaporizada.",
+              "price": 8500,
+              "vegetarian": true,
+              "popular": false,
+              "image": "/imagenes/ven-011.png"
+            },
+            {
+              "id": "ven-012",
+              "name": "Zumo Natural 350ml",
+              "description": "Jugo natural de fruta fresca.",
+              "price": 6000,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/ven-012.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wonka",
+      "name": "Wonka",
+      "location": "Central",
+      "type": "comida_rapida",
+      "description": "Comida rápida con sándwiches, wraps, arepas, desgranados de maíz y comidas rápidas.",
+      "hours": "8:00 AM - 5:00 PM",
+      "priceRange": "$4,900 - $18,700",
+      "image": "/imagenes/wonka.png",
+      "categories": [
+        {
+          "name": "Sándwiches",
+          "items": [
+            {
+              "id": "won-001",
+              "name": "Sándwich de Pollo",
+              "description": "Sándwich con pollo desmechado y salsas.",
+              "price": 18200,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-002.png"
+            },
+            {
+              "id": "won-002",
+              "name": "Sándwich de Carne Desmechada",
+              "description": "Sándwich con carne desmechada y salsas.",
+              "price": 18200,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-002.png"
+            },
+            {
+              "id": "won-003",
+              "name": "Sándwich Ranchero",
+              "description": "Sándwich con salchicha ranchera, queso y salsas.",
+              "price": 14900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-003.png"
+            },
+            {
+              "id": "won-004",
+              "name": "Sándwich Napolitano",
+              "description": "Sándwich con ingredientes estilo napolitano.",
+              "price": 13000,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-004.png"
+            }
+          ]
+        },
+        {
+          "name": "Wraps",
+          "items": [
+            {
+              "id": "won-005",
+              "name": "Wrap de Pollo",
+              "description": "Tortilla rellena de pollo con vegetales y salsas.",
+              "price": 18700,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-004.png"
+            },
+            {
+              "id": "won-006",
+              "name": "Wrap de Carne Desmechada",
+              "description": "Tortilla rellena de carne desmechada con salsas.",
+              "price": 18700,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-006.png"
+            },
+            {
+              "id": "won-007",
+              "name": "Wrap Ranchero",
+              "description": "Tortilla con queso, maicitos y salchicha ranchera.",
+              "price": 18700,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-007.png"
+            }
+          ]
+        },
+        {
+          "name": "Especialidades de Maíz",
+          "items": [
+            {
+              "id": "won-008",
+              "name": "Maíz Gratinado",
+              "description": "Maíz desgranado gratinado con queso derretido.",
+              "price": 18200,
+              "vegetarian": true,
+              "popular": true,
+              "image": "/imagenes/won-008.png"
+            },
+            {
+              "id": "won-009",
+              "name": "Desgranado de Pollo",
+              "description": "Maíz desgranado con trocitos de pollo y salsas.",
+              "price": 18700,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-009.png"
+            }
+          ]
+        },
+        {
+          "name": "Comidas Rápidas",
+          "items": [
+            {
+              "id": "won-010",
+              "name": "Perro Grande",
+              "description": "Perro caliente grande con todas las salsas.",
+              "price": 14900,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-010.png"
+            },
+            {
+              "id": "won-011",
+              "name": "Arepa Burger",
+              "description": "Hamburguesa en arepa con carne y queso.",
+              "price": 18200,
+              "vegetarian": false,
+              "popular": true,
+              "image": "/imagenes/won-011.png"
+            },
+            {
+              "id": "won-012",
+              "name": "Arepa con Adición",
+              "description": "Arepa con relleno a elección.",
+              "price": 12900,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-012.png"
+            },
+            {
+              "id": "won-013",
+              "name": "Dedo de Hojaldre",
+              "description": "Hojaldre relleno recién horneado.",
+              "price": 5400,
+              "vegetarian": false,
+              "popular": false,
+              "image": "/imagenes/won-013.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
